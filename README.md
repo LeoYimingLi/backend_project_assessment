@@ -3,10 +3,10 @@
 
 ## Table of Contents
 0. Requirement
-1. Endpoints Design
-2. Database Design(MongoDB)
-3. API Response Design
-4. How To Run
+1. How To Run
+2. Endpoints Design
+3. Database Design(MongoDB)
+4. API Response Design
 5. Tests(Postman)
 6. Reference
 7. Next Steps
@@ -15,7 +15,16 @@
 
 Detailed google docs: [Backend Engineering Project](https://docs.google.com/document/d/14UF_2Beq87QrZYUgyg3k42TA-oEMJjt0Y7rP0K3lC3I/edit)
 
-## 1.Endpoints Design
+## 1. How T0 Run
+1. Clone the repository:
+`git clone https://github.com/LeoYimingLi/backend_project_assessment`, then `cd backend_project_assessment`
+2. Install dependencies:
+`npm install`
+3. Start the dev server:
+`npm start` or 
+`nodemon --exec node server.js` to automatically restart the server on save.
+
+## 2.Endpoints Design
 
 The API will has the following end-points (they would be preceded by something like http://localhost:4000/api/). The implementation is using Node, Express and Mongoose.
 
@@ -39,7 +48,7 @@ The API will has the following end-points (they would be preceded by something l
 |          | DELETE  | Delete specified grade or 404 error                  | -->
 
 
-## 2.Database Design
+## 3.Database Design
 0.based on MongoDB Atlas(https://www.mongodb.com/cloud/atlas) 
 
 
@@ -72,7 +81,7 @@ The API will has the following end-points (they would be preceded by something l
 **Let's assume that each assessment can be assigned only to one mentor.**
 
 
-## 3.API Response Design
+## 4.API Response Design
 
 1. Responses from the API will be a JSON object with two fields. The first field is named `message`(contains a human readable String). The second field is named `data` and contains the actual JSON response object. For example:
 
@@ -88,16 +97,6 @@ The API will has the following end-points (they would be preceded by something l
 ```
 
 2. The API will respond with appropriate HTTP status codes for both successful and error responses (200 (success), 201 (created), 404 (not found), 500 (server error)).
-
-
-## 4. How T0 Run
-1. Clone the repository:
-`git clone `, then `cd `
-2. Install dependencies:
-`npm install`
-3. Start the dev server:
-`npm start` or 
-`nodemon --exec node server.js` to automatically restart the server on save.
 
 
 ## 5. Tests
