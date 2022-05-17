@@ -15,7 +15,7 @@
 
 Detailed google docs: [Backend Engineering Project](https://docs.google.com/document/d/14UF_2Beq87QrZYUgyg3k42TA-oEMJjt0Y7rP0K3lC3I/edit)
 
-## 1. How T0 Run
+## 1. How To Run
 1. Clone the repository:
 `git clone https://github.com/LeoYimingLi/backend_project_assessment`, then `cd backend_project_assessment`
 2. Install dependencies:
