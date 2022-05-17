@@ -2,12 +2,14 @@
 ### Due: May 17th, 2022, 11.59AM
 
 ## Table of Contents
-0. [Requirement](#requirement)
-1. [Endpoints Design](#endpoints-design)
-2. [Database Design](#database-design)
-3. [API Response Design](#api-response-design)
-4. [How To Run](#how-to-run)
-5. [Tests](#tests)
+0. Requirement
+1. Endpoints Design
+2. Database Design(MongoDB)
+3. API Response Design
+4. How To Run
+5. Tests(Postman)
+6. Reference
+7. Next Steps
 
 ## 0. Requirement
 
