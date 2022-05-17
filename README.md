@@ -3,10 +3,10 @@
 
 ## Table of Contents
 1. How To Run
-2. Endpoints Design
-3. Database Design(MongoDB)
-4. API Response Design
-5. Tests Result(Postman)
+2. Tests Result(Postman)
+3. Endpoints Design
+4. Database Design(MongoDB)
+5. API Response Design
 6. Reference
 7. Next Steps
 0. Requirement
@@ -20,7 +20,11 @@
 `npm start` or 
 `nodemon --exec node server.js` to automatically restart the server on save.
 
-## 2.Endpoints Design
+
+## 2. Tests Result
+  - [Screenshots Records](https://docs.google.com/document/d/162Mk8AA7fjz5LS8ZwuXmcg2_ZTGjikOib6ImIWCG4qk/edit?usp=sharing) about using Postman
+
+## 3.Endpoints Design
 
 The API will has the following end-points (they would be preceded by something like http://localhost:4000/api/). The implementation is using Node, Express and Mongoose.
 
@@ -44,7 +48,7 @@ The API will has the following end-points (they would be preceded by something l
 |          | DELETE  | Delete specified grade or 404 error                  | -->
 
 
-## 3.Database Design
+## 4.Database Design
 0.based on MongoDB Atlas(https://www.mongodb.com/cloud/atlas) 
 
 
@@ -76,7 +80,7 @@ grade(mark, remark) is merged into the **submission** stucture for simplicity.
 Let's assume that each assessment can be assigned only to one mentor.
 
 
-## 4.API Response Design
+## 5.API Response Design
 
 1. Responses from the API will be a JSON object with two fields. The first field is named `message`(contains a human readable String). The second field is named `data` and contains the actual JSON response object. For example:
 
@@ -93,10 +97,6 @@ Let's assume that each assessment can be assigned only to one mentor.
 
 2. The API will respond with appropriate HTTP status codes for both successful and error responses (200 (success), 201 (created), 404 (not found), 500 (server error)).
 
-
-## 5. Tests Result
-  - [Screenshots Records](https://docs.google.com/document/d/162Mk8AA7fjz5LS8ZwuXmcg2_ZTGjikOib6ImIWCG4qk/edit?usp=sharing) about using Postman
-
 ## 6.Reference
 Course Web Programming Project3: https://gitlab.com/uiuc-web-programming/mp3/-/tree/master/  
 
@@ -110,6 +110,7 @@ My Implementation for cs498rk-mp3: https://github.com/LeoYimingLi/cs498rk/tree/m
 5.after deleting user by admin, if that's student, we should delete prev submission; if mentor, delete assessments+student.assessments + submissions;  
 6.if submission is edited by admin, may update student.assessment(if submission.student changed);   
 7.delete submission by admin, update student.assessment;  
+8.mocha test framework;  
 
 ## 0. Requirement
 Detailed google docs: [Backend Engineering Project](https://docs.google.com/document/d/14UF_2Beq87QrZYUgyg3k42TA-oEMJjt0Y7rP0K3lC3I/edit)
