@@ -2,18 +2,14 @@
 ### Due: May 17th, 2022, 11.59AM
 
 ## Table of Contents
-0. Requirement
 1. How To Run
 2. Endpoints Design
 3. Database Design(MongoDB)
 4. API Response Design
-5. Tests(Postman)
+5. Tests Result(Postman)
 6. Reference
 7. Next Steps
-
-## 0. Requirement
-
-Detailed google docs: [Backend Engineering Project](https://docs.google.com/document/d/14UF_2Beq87QrZYUgyg3k42TA-oEMJjt0Y7rP0K3lC3I/edit)
+0. Requirement
 
 ## 1. How To Run
 1. Clone the repository:
@@ -99,7 +95,7 @@ The API will has the following end-points (they would be preceded by something l
 2. The API will respond with appropriate HTTP status codes for both successful and error responses (200 (success), 201 (created), 404 (not found), 500 (server error)).
 
 
-## 5. Tests
+## 5. Tests Result
   - [Screenshots Records](https://docs.google.com/document/d/162Mk8AA7fjz5LS8ZwuXmcg2_ZTGjikOib6ImIWCG4qk/edit?usp=sharing) about using Postman
 
 ## 6.Reference
@@ -115,3 +111,6 @@ My Implementation for cs498rk-mp3: https://github.com/LeoYimingLi/cs498rk/tree/m
 5.after deleting user by admin, if that's student, we should delete prev submission; if mentor, delete assessments+student.assessments + submissions;  
 6.if submission is edited by admin, may update student.assessment(if submission.student changed);   
 7.delete submission by admin, update student.assessment;  
+
+## 0. Requirement
+Detailed google docs: [Backend Engineering Project](https://docs.google.com/document/d/14UF_2Beq87QrZYUgyg3k42TA-oEMJjt0Y7rP0K3lC3I/edit)
