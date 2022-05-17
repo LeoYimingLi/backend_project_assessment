@@ -71,7 +71,8 @@ The API will has the following end-points (they would be preceded by something l
 |    | "mark" | String |  |
 |    | "remark" | String |  |
 
-grade(mark, remark)** is merged into the **submission** stucture for simplicity.
+grade(mark, remark) is merged into the **submission** stucture for simplicity.
+
 Let's assume that each assessment can be assigned only to one mentor.
 
 
